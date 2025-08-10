@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cp -r /minecraft/libraries /data/
+
+exec java ${JAVA_FLAGS} -jar /minecraft/forge*shim.jar $@
