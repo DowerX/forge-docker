@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/forge:${{ env.TAG_NAME }}
+          tags: ghcr.io/dowerx/forge:${{ env.TAG_NAME }}
           build-args: |
             FORGE_VERSION=${{ env.TAG_NAME }}
             TEMURIN_TAG=21-jre-alpine-3.22
